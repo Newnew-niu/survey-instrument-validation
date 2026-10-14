@@ -1,0 +1,9 @@
+== 1. Results without the 4 multivariate outliers (Mahalanobis p < .001)
+n = 150
+alpha by block: {'A': 0.917, 'B': 0.923, 'C': 0.923, 'D': 0.916}
+CFA chi2/df=1.427 CFI=0.928 RMSEA=0.054
+latent correlations: [1.01, 1.0, 0.99, 0.99, 1.01, 1.02]
+gender p = 0.806 | year p = 0.337
+
+== 2. GA-BP model inputs vs. target (Appendix B)
+Taking the largest input membership reproduces the target level for 154 of 154 cases

@@ -1,0 +1,54 @@
+== 1. Data quality
+straight-liners (row SD=0): 0
+longest identical run >=20: 0  max run: 12
+Mahalanobis outliers p<.001: 4
+missing: 0
+
+== 2. Reliability & item analysis
+MH: alpha=0.911 KMO=0.932 CITC min=0.60 (A8) ; items where alpha-if-deleted > alpha: []
+SA: alpha=0.918 KMO=0.942 CITC min=0.65 (B7) ; items where alpha-if-deleted > alpha: []
+AP: alpha=0.918 KMO=0.931 CITC min=0.59 (C10) ; items where alpha-if-deleted > alpha: []
+SR: alpha=0.911 KMO=0.936 CITC min=0.63 (D3) ; items where alpha-if-deleted > alpha: []
+overall alpha 40 items: 0.977  KMO overall: 0.96  Bartlett p: 0.0
+critical ratio min: 9.07 A8
+
+== 3. EFA (40 items)
+eigenvalues top 6: [21.31  1.17  1.01  0.94  0.92  0.83]  n>1: 3  var% first: 53.3
+parallel analysis factors to retain: 1
+A                {0: 8, 1: 2}
+B                {0: 9, 1: 1}
+C          {0: 6, 1: 3, 2: 1}
+D    {0: 6, 2: 2, 1: 1, 3: 1}
+Name: max_f, dtype: object
+items max loading <.40: ['A1', 'A10', 'B9', 'C6', 'C7', 'C8', 'C9', 'D4', 'D6']
+cumulative var 4 factors: 0.386
+factor correlations:
+       0     1     2     3
+0  1.00  0.57  0.80  0.33
+1  0.57  1.00  0.50  0.31
+2  0.80  0.50  1.00  0.28
+3  0.33  0.31  0.28  1.00
+Harman single factor var %: 52.1
+
+== 4. CFA 4-factor
+                 Value
+DoF            734.000
+chi2          1036.350
+chi2 p-value     0.000
+CFI              0.929
+TLI              0.925
+GFI              0.794
+RMSEA            0.052
+chi2/df: 1.412
+MH: loadings 0.65-0.79 AVE=0.509 CR=0.912 sqrtAVE=0.713
+SA: loadings 0.69-0.76 AVE=0.534 CR=0.920 sqrtAVE=0.730
+AP: loadings 0.63-0.81 AVE=0.530 CR=0.918 sqrtAVE=0.728
+SR: loadings 0.65-0.76 AVE=0.505 CR=0.911 sqrtAVE=0.711
+latent correlations:
+ lval rval  Est. Std
+  AP   SA  0.985825
+  MH   AP  1.002624
+  MH   SA  1.009665
+  SR   AP  1.017955
+  SR   MH  0.988093
+  SR   SA  1.012051

@@ -1,0 +1,45 @@
+Level counts (Good/Normal/Mild/Severe): [64 21 67  2] - thesis reported 64/21/67/2
+
+== Weight sensitivity (vs original 50/20/20/10)
+                      scheme                      weights         agreement kappa
+           Equal 25/25/25/25     [0.25, 0.25, 0.25, 0.25]             0.948 0.914
+       Entropy (data-driven) [0.253, 0.241, 0.251, 0.255]             0.942 0.904
+     MH-dominant 60/15/15/10       [0.6, 0.15, 0.15, 0.1]             0.968 0.948
+         Reverse 10/20/20/50         [0.1, 0.2, 0.2, 0.5]             0.870 0.790
+Random Dirichlet (200 draws)                            — 0.906 (min 0.818)     —
+entropy weights: [0.253 0.241 0.251 0.255]
+
+== Model comparison
+1-factor               chi2/df=1.425 CFI=0.926 TLI=0.922 RMSEA=0.053 AIC=146.3 BIC=389.3
+4-factor correlated    chi2/df=1.412 CFI=0.929 TLI=0.925 RMSEA=0.052 AIC=158.5 BIC=419.7
+Bifactor               chi2/df=1.437 CFI=0.928 TLI=0.920 RMSEA=0.053 AIC=226.9 BIC=591.4
+  general-factor loadings mean 0.72  specific mean 0.05
+
+== Segments (total score 40-200; higher = more difficulty)
+        Total            
+         mean   std count
+Gender                   
+Female  116.5  38.0    83
+Male    114.9  40.3    71
+  Welch t=0.26 p=0.794 d=0.04
+Level   Good  Normal  Mild  Severe
+Gender                            
+Female    33      15    34       1
+Male      31       6    33       1
+  chi2=3.02 df=3 p=0.389 CramerV=0.140 minExpected=0.9
+      Total            
+       mean   std count
+Year                   
+Y1    119.4  39.7    44
+Y2    119.0  40.0    56
+Y3    109.4  37.1    54
+  ANOVA F=1.09 p=0.338 eta2=0.014; Kruskal p=0.689
+Level  Good  Normal  Mild  Severe
+Year                             
+Y1       16       7    20       1
+Y2       23       3    29       1
+Y3       25      11    18       0
+  chi2=8.69 df=6 p=0.192 CramerV=0.168 minExpected=0.6
+
+Top 5 items %agree: {'B8': 0.45, 'B7': 0.44, 'C9': 0.44, 'A1': 0.42, 'D4': 0.42}
+Bottom 5: {'B5': 0.34, 'D10': 0.34, 'C8': 0.34, 'D3': 0.34, 'C5': 0.33}

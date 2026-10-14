@@ -1,0 +1,8 @@
+# Respondent-level data is not published (available on request)
+data/*.csv
+data/*.xlsx
+data/*.sav
+outputs/scored.csv
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
